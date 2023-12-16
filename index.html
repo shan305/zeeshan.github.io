@@ -4,45 +4,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-HjNUOszCEwbw8DAek5MMd3OJUqI4wYHC5A/dBCMTNwCV8cVafNE6tLzQokJMW+tG" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-HjNUOszCEwbw8DAek5MMd3OJUqI4wYHC5A/dBCMTNwCV8cVafNE6tLzQokJMW+tG" crossorigin="anonymous">
+
     <title>Crafting Excellence: The Portfolio of Zeeshan Ali</title>
 </head>
 
 <body>
 
-    <header>
+    <header class="bg-primary text-white text-center py-4">
         <h1>Zeeshan Ali</h1>
+        <div class="social-icons">
+            <a href="https://linkedin.com/in/zeeshan-ali-89b246193" target="_blank" rel="noopener noreferrer" class="text-white">Linkedin<i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/shan305" target="_blank" rel="noopener noreferrer" class="text-white">Github<i class="fab fa-github"></i></a>
+            <a href="https://www.scriptedsaga.io/" target="_blank" rel="noopener noreferrer" class="text-white">Website<i class="fas fa-globe"></i></a>
+        </div>
     </header>
 
-    <div class="main-content">
+    <div class="container mt-4">
 
-        <!-- Left Side - Elevating Your Presence -->
-        <div class="about-me">
-            <img src="images/ze.jpg" alt="Your Profile Picture" class="profile-picture">
-            <h2>About Me</h2>
-            <p>
-                Embark on a journey through my portfolio! I am a fervent and imaginative individual, weaving creativity into every facet of my work. With a background in...
-            </p>
-        </div>
+        <div class="row">
 
-        <!-- Right Side - Showcasing Mastery -->
-        <div class="projects">
-            <h2>Projects</h2>
-            <ul>
-                <li>
-                    <h3>Machine Learning Project: Boston Housing Regression Analysis</h3>
-                    <p>Dive into the realm of data with my project, unraveling insights and building regression models using the Boston Housing Dataset...</p>
-                    <a href="https://github.com/shan305/Boston-Housing-Regression-Analysis">Explore Project</a>
-                </li>
-                <li>
-                    <h3>Machine Learning Project: Facial Recognition</h3>
-                    <p>Exciting developments are on the horizon. Stay tuned for my upcoming project in the fascinating world of facial recognition...</p>
-                    <a href="https://github.com/shan305/Boston-Housing-Regression-Analysis">Preview Project</a>
-                </li>
-            </ul>
+            <div class="col-md-6">
+                <div class="about-me">
+                    <img src="images/ze.jpg" alt="Your Profile Picture" class="profile-picture img-fluid mb-3">
+                    <h2>About Me</h2>
+                    <p class="text-muted">
+                        Dedicated software developer skilled in application and architectural design, excelling in both front and backend technologies. Specializes in creating user-friendly websites. Currently advancing data processing efficiency through the development of data
+                        labeling software. Committed to staying updated on emerging technologies for innovative solutions. Open to collaboration and to contribute to dynamic projects. Let's connect and explore possibilities!
+                    </p>
+
+                    <h2>Education</h2>
+                    <p class="text-muted">
+                        <strong>UNSW Australia</strong><br> Bachelor of Information Technology<br> Graduation Year: 2017
+                    </p>
+
+                    <div class="tech-stack">
+                        <h2>Tech Stack</h2>
+                        <ul class="list-unstyled">
+                            <li>Python</li>
+                            <li>JavaScript</li>
+                            <li>C++</li>
+                            <li>HTML/CSS</li>
+                            <li>React.js</li>
+                            <li>Machine Learning</li>
+                            <li>Computer Vision</li>
+                            <li>TensorFlow</li>
+                            <li>Django</li>
+                            <li>GCP/AWS</li>
+                            <li>Java</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="projects">
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <h3>Machine Learning Project: Boston Housing Regression Analysis</h3>
+                            <p class="text-muted">Dive into the realm of data with my project, unraveling insights and building regression models using the Boston Housing Dataset...</p>
+                            <a href="https://github.com/shan305/Boston-Housing-Regression-Analysis" class="btn btn-outline-primary">Explore Project</a>
+                        </li>
+                        <li>
+                            <h3>Machine Learning Project: Facial Recognition</h3>
+                            <p class="text-muted">Exciting developments are on the horizon. Stay tuned for my upcoming project in the fascinating world of facial recognition...</p>
+                            <a href="https://github.com/shan305/Boston-Housing-Regression-Analysis" class="btn btn-outline-primary">Explore Project</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
 
     </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 
