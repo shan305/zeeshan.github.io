@@ -11,11 +11,30 @@ header {
     padding: 1em;
 }
 
-section {
-    max-width: 800px;
+.main-content {
+    display: flex;
+    max-width: 1200px;
     margin: 20px auto;
+}
+
+.about-me {
+    flex: 1;
     padding: 20px;
-    border: 1px solid #ddd;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
+.projects {
+    flex: 2;
+    padding: 20px;
+}
+
+.projects li {
+    margin-bottom: 20px;
 }
 
 a {
