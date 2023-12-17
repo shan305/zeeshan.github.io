@@ -5,10 +5,22 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #5C6BC0;
+    /* Softer primary color */
     color: white;
     text-align: center;
     padding: 1em;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 8px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #B39DDB;
+    /* Lighter color on hover */
 }
 
 .main-content {
@@ -20,12 +32,27 @@ header {
 .about-me {
     flex: 1;
     padding: 20px;
+    background-color: #EDE7F6;
+    /* Softer background color */
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.about-me:hover {
+    transform: scale(1.02);
+    /* Slightly zoom in on hover */
 }
 
 .profile-picture {
     border-radius: 50%;
     max-width: 100px;
     margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.profile-picture:hover {
+    transform: rotate(360deg);
+    /* Rotate on hover */
 }
 
 .projects {
@@ -37,11 +64,44 @@ header {
     margin-bottom: 20px;
 }
 
-a {
-    color: #007BFF;
-    text-decoration: none;
+.projects a.btn-outline-primary {
+    color: #5C6BC0;
+    border-color: #5C6BC0;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-a:hover {
-    text-decoration: underline;
+.projects a.btn-outline-primary:hover {
+    background-color: #B39DDB;
+    /* Lighter color on hover */
+    color: white;
+}
+
+.nav-tabs .nav-item a.nav-link {
+    color: #5C6BC0;
+    transition: color 0.3s;
+}
+
+.nav-tabs .nav-item a.nav-link:hover {
+    color: #B39DDB;
+    /* Lighter color on hover */
+}
+
+.icon-box {
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.icon-box img {
+    max-width: 80px;
+    /* Adjust the size as needed */
+    border-radius: 50%;
+}
+
+.icon-box:hover {
+    transform: scale(1.1);
+    /* Slightly zoom in on hover */
+}
+
+.icon-box p {
+    margin-top: 10px;
 }
