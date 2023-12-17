@@ -52,7 +52,6 @@ header {
 
 .profile-picture:hover {
     transform: rotate(360deg);
-    /* Rotate on hover */
 }
 
 .projects {
@@ -83,7 +82,6 @@ header {
 
 .nav-tabs .nav-item a.nav-link:hover {
     color: #B39DDB;
-    /* Lighter color on hover */
 }
 
 .icon-box {
@@ -93,13 +91,11 @@ header {
 
 .icon-box img {
     max-width: 80px;
-    /* Adjust the size as needed */
     border-radius: 50%;
 }
 
 .icon-box:hover {
     transform: scale(1.1);
-    /* Slightly zoom in on hover */
 }
 
 .icon-box p {
