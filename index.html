@@ -26,11 +26,69 @@
         gtag('config', 'G-YNTR2J3EH6');
     </script>
     <title>Zeeshan Ali Portfolio</title>
+
+    <style>
+        body {
+            background-color: aliceblue;
+            margin: 2px;
+        }
+        
+        .justify-content-between {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .justify-content-between .col-md-6 {
+            width: calc(50% - 15px);
+            /* Adjust as per your design */
+            margin-bottom: 30px;
+            /* Add desired space between each row */
+        }
+        
+        .placeholder-background {
+            background-color: #fff;
+            /* Choose your desired background color */
+            /* Optional: add a border for a more placeholder-like appearance */
+            padding: 20px;
+            /* Optional: add padding to the container for better spacing */
+        }
+        /* Adjust margin-bottom to control the spacing between the rows */
+        
+        .active-tab {
+            background-color: #A52A2A;
+            /* Change this to your desired color */
+        }
+        
+        .quotation-text {
+            position: relative;
+            padding-left: 30px;
+            /* Adjust as needed */
+        }
+        
+        .quotation-text::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 6px;
+            /* Adjust the width of the border */
+            background-color: #333;
+            /* Adjust the color of the border */
+        }
+        
+        @media (max-width: 768px) {
+            .justify-content-between .col-md-6 {
+                width: 100%;
+                /* Make the cards stack vertically on smaller screens */
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <header class="bg-primary text-white text-center py-4">
+    <header class="bg-secondary text-white text-center py-4">
         <h1>Zeeshan Ali</h1>
         <div class="social-icons">
             <a href="https://linkedin.com/in/zeeshan-ali-89b246193 " class="linkedin" class="text-white"><i class="bx bxl-linkedin"></i></i></a>
@@ -39,40 +97,59 @@
             <a href="https://www.scriptedsaga.io/" class="text-white">Website<i class=""></i></a>
         </div>
     </header>
+    <div class="landing-page" style="margin: 20px; font-family: 'Arial', sans-serif;">
+        <div class="container" style="max-width: 1200px; margin: auto;">
+            <div class="row justify-content-between">
+                <div class="col-md-3 py-4">
+                    <img src="images/ze.jpg" alt="zeeshan Ali Picture" class="profile-picture img-fluid mb-4">
+                </div>
+                <div class="col-md-7">
+                    <h2 class="text-center" style="font-family: 'Times New Roman', serif; font-size: 24px;">About Me</h2>
+                    <p class="text-muted placeholder-background" style="font-size: 18px; line-height: 1.6; text-align: justify;">
+                        Dedicated software developer skilled in application and architectural design, excelling in both front and backend technologies. Specializes in creating user-friendly websites. Currently advancing data processing efficiency through the development of data
+                        labeling software. Committed to staying updated on emerging technologies for innovative solutions. Open to collaboration and to contribute to dynamic projects. Let's connect and explore possibilities!
+                    </p>
+
+                    <h2 class="text-center" style="font-family: 'Times New Roman', serif; font-size: 24px;">Education</h2>
+                    <p class="text-muted text-center placeholder-background" style="font-size: 18px; line-height: 1.6;">
+                        <strong>UNSW Australia</strong><br> Bachelor of Information Technology<br> Graduation Year: 2017
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
 
     <div class="container mt-4">
 
         <div class="row">
 
-            <div class="col-md-4">
-                <div class="about-me">
-                    <img src="images/ze.jpg" alt="Your Profile Picture" class="profile-picture img-fluid mb-3">
-                    <h2>About Me</h2>
-                    <p class="text-muted">
-                        Dedicated software developer skilled in application and architectural design, excelling in both front and backend technologies. Specializes in creating user-friendly websites. Currently advancing data processing efficiency through the development of data
-                        labeling software. Committed to staying updated on emerging technologies for innovative solutions. Open to collaboration and to contribute to dynamic projects. Let's connect and explore possibilities!
-                    </p>
 
-                    <h2>Education</h2>
-                    <p class="text-muted">
-                        <strong>UNSW Australia</strong><br> Bachelor of Information Technology<br> Graduation Year: 2017
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-md-8">
-                <ul class="nav nav-tabs">
+            <div class="col-md-12">
+                <ul class="nav nav-tabs d-flex justify-content-center align-items-center bg-secondary" style="height:80px;width:100%; border-radius: 10px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);">
                     <li class="nav-item">
-                        <a class="nav-link active" id="projects-tab" data-toggle="tab" href="#projects-content" onclick="toggleTab('projects-content')"> <i class="bi bi-folder"></i> <span> Projects</span></a>
+                        <a class="nav-link active bg-secondary" id="projects-tab" data-toggle="tab" href="#projects-content" onclick="toggleTab('projects-content')" style="color: #fff; border: none; border-radius: 10px 0 0 0;">
+                            <i class="bi bi-folder"></i>
+                            <span> Projects</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="tech-tab" data-toggle="tab" href="#tech-stack-content" onclick="toggleTab('tech-stack-content')"><i class="bi bi-laptop"></i><span>Tech Stack</span></a>
+                        <a class="nav-link  bg-secondary" id="tech-tab " data-toggle="tab" href="#tech-stack-content" onclick="toggleTab('tech-stack-content')" style="color: #fff; border: none;">
+                            <i class="bi bi-laptop"></i>
+                            <span>Tech Stack</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-
-                        <a class="nav-link" id="tech-tab" data-toggle="tab" href="#resume-content" onclick="toggleTab('resume-content')"><i class="bx bx-file-blank"></i> <span>Resume</span></a>
+                        <a class="nav-link bg-secondary" id="resume-tab" data-toggle="tab" href="#resume-content" onclick="toggleTab('resume-content')" style="color: #fff; border: none; border-radius: 0 10px 0 0;">
+                            <i class="bx bx-file-blank"></i>
+                            <span>Resume</span>
+                        </a>
                     </li>
                 </ul>
+
 
                 <div class="tab-content mt-3">
                     <div class="tab-pane fade show active" id="projects-content">
@@ -81,62 +158,34 @@
 
 
 
-                                <div class="row">
+                                <div class="row justify-content-between py-4 mb-4">
 
-
-
-
-
-                                    <div class="col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                                    <div class="col-12 col-md-4 d-flex align-items-stretch mb-4" data-aos="zoom-in" data-aos-delay="100">
                                         <div class="icon-box iconbox-blue">
                                             <div class="icon">
                                                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
-                </svg>
+                                            <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+                                        </svg>
                                                 <i class="bx bxl-dribbble"></i>
                                             </div>
-                                            <h4><a href="https://github.com/shan305/Boston-Housing-Regression-Analysis">Machine Learning Project: Boston Housing Regression Analysis</a></h4>
-                                            <p class="text-muted">Dive into the realm of data with my project, unraveling insights and building regression models using the Boston Housing Dataset...</p>
+                                            <h4><a href="https://github.com/shan305/LetsChat">Chat Application with Real-time Features</a></h4>
+                                            <p class="text-muted">A real-time chat application built using React, Node.js, Socket.io, and MongoDB. The application allows users to exchange text and media messages, initiate and answer calls, and manage their friends list.</p>
+
+                                            <div class="text-muted">
+                                                <p>Tech stack:</p>
+                                                <div style="margin-left: 20px;">
+                                                    <p>React, Node.js, Socket.io, MongoDB, Redis</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
 
-
-                                    <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+                                    <div class="col-12 col-md-4 d-flex align-items-stretch mb-4" data-aos="zoom-in" data-aos-delay="100">
                                         <div class="icon-box iconbox-orange">
                                             <div class="icon">
                                                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
-                </svg>
-                                                <i class="bx bx-file"></i>
-                                            </div>
-                                            <h4><a href="https://github.com/shan305/sentiment_analysis_-Naive_Bayes_Classifier/tree/main">Sentiment Analysis Project: NLTK Naive Bayes Classifier</a></h4>
-                                            <p class="text-muted">Thre rpoject covers sentiment analysis using the NLTK library with a Naive Bayes Classifier. It includes data loading, preprocessing, feature extraction, training, testing, evaluation, and making predictions.
-                                                Feel free to delve deeper into the world of natural language processing techniques and diverse datasets.</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
-                                        <div class="icon-box iconbox-yellow">
-                                            <div class="icon">
-                                                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813"></path>
-            </svg>
-                                                <i class="bx bx-data"></i>
-                                            </div>
-                                            <h4><a href="https://github.com/shan305/Sales_Data_Analysis">Sales Data Analysis</a></h4>
-                                            <p>This project involves comprehensive data science analysis of synthetic retail sales data. The script, written in Python, utilizes the Faker library to generate synthetic data and performs various data analysis
-                                                tasks including exploration, cleaning, and visualization.</p>
-                                            <p>The analysis covers aspects such as total sales distribution, sales trends over time, aggregated sales trends, top-selling products, and price distribution. The script generates visualizations and text outputs,
-                                                providing valuable insights into the synthetic sales data.</p>
-                                            <p>Tools/Libraries Used: Python, Faker, pandas, matplotlib, seaborn</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-                                        <div class="icon-box iconbox-orange">
-                                            <div class="icon">
-                                                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
-            </svg>
+                                                <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
+                                            </svg>
                                                 <i class="bx bx-file"></i>
                                             </div>
                                             <h4><a href="https://github.com/shan305/Face_Recognition-">Facial Recognition</a></h4>
@@ -149,13 +198,61 @@
                                             </p>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+
+                                    <div class="col-12 col-md-4 d-flex align-items-stretch mb-4" data-aos="zoom-in" data-aos-delay="100">
+                                        <div class="icon-box iconbox-yellow">
+                                            <div class="icon">
+                                                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                                                <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813"></path>
+                                            </svg>
+                                                <i class="bx bx-data"></i>
+                                            </div>
+                                            <h4><a href="https://github.com/shan305/Sales_Data_Analysis">Sales Data Analysis</a></h4>
+                                            <p>This project involves comprehensive data science analysis of synthetic retail sales data. The script, written in Python, utilizes the Faker library to generate synthetic data and performs various data analysis
+                                                tasks including exploration, cleaning, and visualization.</p>
+                                            <p>The analysis covers aspects such as total sales distribution, sales trends over time, aggregated sales trends, top-selling products, and price distribution. The script generates visualizations and text outputs,
+                                                providing valuable insights into the synthetic sales data.</p>
+                                            <p>Tools/Libraries Used: Python, Faker, pandas, matplotlib, seaborn</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-4 d-flex align-items-stretch mb-4" data-aos="zoom-in" data-aos-delay="100">
+                                        <div class="icon-box iconbox-blue">
+                                            <div class="icon">
+                                                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                                                <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+                                                </svg>
+                                                <i class="bx bxl-dribbble"></i>
+                                            </div>
+                                            <h4><a href="https://github.com/shan305/Boston-Housing-Regression-Analysis">Machine Learning Project: Boston Housing Regression Analysis</a></h4>
+                                            <p class="text-muted">Dive into the realm of data with my project, unraveling insights and building regression models using the Boston Housing Dataset...</p>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-12 col-md-4 d-flex align-items-stretch mb-4" data-aos="zoom-in" data-aos-delay="100">
+                                        <div class="icon-box iconbox-orange">
+                                            <div class="icon">
+                                                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                                                <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
+                                                </svg>
+                                                <i class="bx bx-file"></i>
+                                            </div>
+                                            <h4><a href="https://github.com/shan305/sentiment_analysis_-Naive_Bayes_Classifier/tree/main">Sentiment Analysis Project: NLTK Naive Bayes Classifier</a></h4>
+                                            <p class="text-muted">Thre project covers sentiment analysis using the NLTK library with a Naive Bayes Classifier. It includes data loading, preprocessing, feature extraction, training, testing, evaluation, and making predictions.
+                                                Feel free to delve deeper into the world of natural language processing techniques and diverse datasets.</p>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="col-12 col-md-4 d-flex align-items-stretch mb-4" data-aos="zoom-in" data-aos-delay="100">
                                         <div class="icon-box iconbox-yellow">
                                             <div class="icon">
                                                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
                                              <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762"></path>
-                </svg>
+                                                <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762"></path>
+                                                </svg>
                                                 <i class="bx bx-layer"></i>
                                             </div>
                                             <h4><a href="https://github.com/shan305/Image_Classification">CIFAR-10 Image Classification</a></h4>
@@ -164,7 +261,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                                    <div class="col-12 col-md-4 d-flex align-items-stretch mb-4 " data-aos="zoom-in" data-aos-delay="100">
                                         <div class="icon-box iconbox-blue">
                                             <div class="icon">
                                                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
@@ -187,58 +284,10 @@
                                     </div>
 
 
-                                    <div class="col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-                                        <div class="icon-box iconbox-blue">
-                                            <div class="icon">
-                                                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                                            <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
-                                        </svg>
-                                                <i class="bx bxl-dribbble"></i>
-                                            </div>
-                                            <h4><a href="https://github.com/shan305/LetsChat">Chat Application with Real-time Features</a></h4>
-                                            <p class="text-muted">A real-time chat application built using React, Node.js, Socket.io, and MongoDB. The application allows users to exchange text and media messages, initiate and answer calls, and manage their friends list.</p>
-
-                                            <div class="text-muted">
-                                                <p>Tech stack:</p>
-                                                <div style="margin-left: 20px;">
-                                                    <p>React, Node.js, Socket.io, MongoDB, Redis</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
 
 
-                                    <!-- End Portfolio Section
-                                  
 
-                                
 
-                                    <div class="col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
-                                        <div class="icon-box iconbox-red">
-                                            <div class="icon">
-                                                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572"></path>
-                </svg>
-                                                <i class="bx bx-slideshow"></i>
-                                            </div>
-                                            <h4><a href="">Dele Cardo</a></h4>
-                                            <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
-                                        <div class="icon-box iconbox-teal">
-                                            <div class="icon">
-                                                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762"></path>
-                </svg>
-                                                <i class="bx bx-arch"></i>
-                                            </div>
-                                            <h4><a href="">Divera Don</a></h4>
-                                            <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
-                                        </div>
-                                    </div>
- -->
                                 </div>
 
                             </div>
@@ -343,54 +392,83 @@
 
 
 
-                                <div class="row">
+                                <div class="row ">
 
                                     <div class="col-lg-12">
-                                        <h3 class="resume-title">Professional Experience</h3>
+                                        <h3 class="resume-title text-center">Professional Experience</h3>
                                         <div class="resume-item">
-                                            <h4>Founder/CTO at Revive Scripted Saga</h4>
+                                            <h4 class="bg-white">Founder/CTO at Revive Scripted Saga</h4>
                                             <h5>Jan 2021 - Present</h5>
                                             <p><em>Dubai · Remote</em></p>
                                             <p>Scripted Saga offers tech-powered Business Process Outsourcing (BPO) services, specializing in complex data challenges and providing virtual teams for Sales, Data, and Operations. We excel in tasks such as data
                                                 research, database management, and on-demand software creation, ensuring precision and innovation in meeting clients' diverse needs.</p>
                                             <ul>
-                                                <li>Skills: Nginx · Django · Cloud Computing · Microsoft Azure · Google Cloud Platform (GCP) · Full-Stack Development · Software Design · IT Operations · Software Development</li>
+                                                <li>
+
+                                                    <span>Annotation Platform: </span>I'm actively involved in the development of an Image and Text Annotation Platform. This versatile platform facilitates the annotation of images for text localization,
+                                                    allowing users to mark objects and apply labels. In addition to annotating images, the platform supports text annotation, enabling users to label various elements such as entity relationships and any
+                                                    type of text.
+
+
+
+                                                </li>
+                                                <li>
+                                                    Website: Dynamic website from scratch, employing React, Python Flask, and CSS. The project highlights my expertise in creating customizable web applications with a focus on user experience. Utilizing React, I crafted a responsive interface with custom
+                                                    forms to enhance user interaction, while Python Flask on the backend ensures robust functionality and seamless data flow. The website boasts meticulously designed visuals, incorporating custom UI materials
+                                                    and images for a unique and engaging user interface, elevating both functionality and aesthetics.
+                                                </li>
+
+                                                <h5>Skills: Nginx · Django · Cloud Computing · Microsoft Azure · Google Cloud Platform (GCP) · Full-Stack Development · Software Design · IT Operations · Software Development</h5>
+
+
                                             </ul>
                                         </div>
                                         <div class="resume-item">
-                                            <h4>Lieutenant at Pakistan Navy</h4>
+                                            <h4 class="bg-white">Lieutenant at Pakistan Navy</h4>
                                             <h5>Jul 2019 - Dec 2023</h5>
                                             <p><em>Islamabad, Islāmābād, Pakistan</em></p>
-                                            <ul>
-                                                <li>Navigation with expertise in celestial and electronic navigation for safe passage.</li>
-                                                <li>Managed logs and records using relevant software.</li>
-                                                <li>Handled communications, ensuring clear and secure transmissions.</li>
-                                                <li>Conducted drills and training for emergency preparedness using simulation programs.</li>
-                                                <!-- ... Add more Lieutenant details as needed -->
+                                            <ul ">
+                                                <li>Used React and the Django framework to develop internal web applications.</li>
+                                                <li>Created simulations for operations using Anylogic and Unity.</li>
+                                                <li>Developed a mobile application using Typescript, Ionic Framework, and sqlite3 as the backend.</li>
+                                                <li>Coordinated senior leadership engagements, tech conferences, and corporate events using advanced event management software.</li>
+                                                <li>Managed executive calendars, schedules, and appointments with advanced scheduling and productivity tools.</li>
+                                                <li>Prepared and reviewed correspondence, briefing materials, and reports for the Senior Military Officer.</li>
+                                                <li>Enhanced office efficiency through collaborative cross-functional efforts, implementing streamlined automation pipelines using Python.</li>
+                                                <li>Conducted thorough research and analysis to support strategic planning for the Senior Military Officer, utilizing Python-based data science techniques.</li>
+                                                <li>Secured executive data with advanced information management and security practices, employing Python and Java for encryption and access controls.</li>
                                             </ul>
                                             <h5>Skills: Cloud Computing · Microsoft Azure · Machine Learning · Full-Stack Development · Cross-Cultural Communication Skills · Data Analysis · Data Science · AnyLogic · Information Technology</h5>
                                         </div>
-                                        <div class="resume-item">
-                                            <h4>Sub Lieutenant at Pakistan Navy</h4>
+                                        <div class="resume-item ">
+                                            <h4 class="bg-white ">Sub Lieutenant at Pakistan Navy</h4>
                                             <h5>Dec 2017 - Jul 2019</h5>
                                             <p><em>Pakistan</em></p>
                                             <ul>
-                                                <li>Developed strong leadership and communication skills in dynamic environments.</li>
-                                                <li>Successful experience in project management, security protocols, and complex problem-solving.</li>
-                                                <li>Demonstrated adaptability and leadership while leading teams.</li>
-                                                <!-- ... Add more Sub Lieutenant details as needed -->
+
+                                                <li>Worked on office automation platforms using web development frameworks and private cloud technologies.</li>
+                                                <li>Developed software to manage navigational charts, logs, and records, streamlining maritime operations.</li>
+                                                <li>Managed navigational charts, logs, and records using advanced software.</li>
+                                                <li>Ensured secure communications through the implementation of advanced encryption and transmission technologies.</li>
+                                                <li>Created simulations and conducted emergency preparedness drills using simulation programs for optimal team training.</li>
+                                                <li>Oversaw organizational operations, supervised systems, and coordinated with other departments.</li>
+                                                <li>Maintained and repaired IT equipment for optimal performance using advanced diagnostic software.</li>
+                                                <li>Acted as an executive officer, managing organizational operations and leading teams.</li>
+                                                <li>Managed logistics operations using logistics management software.</li>
                                             </ul>
+
                                             <h5>Skills: Communication · Technical Skillset · Problem Solving · Analytical Skills · Machine Learning · Team Leadership · Team Building · Project Management</h5>
                                         </div>
-                                        <div class="resume-item">
-                                            <h4>Midshipman at Australian Defence Force Academy</h4>
+                                        <div class="resume-item ">
+                                            <h4 class="bg-white ">Midshipman at Australian Defence Force Academy</h4>
                                             <h5>Jan 2015 - Dec 2017</h5>
                                             <p><em>Canberra, Australian Capital Territory, Australia · On-site</em></p>
                                             <ul>
                                                 <li>Built strong leadership skills through hands-on experience and training.</li>
                                                 <li>Took challenging academic courses covering naval science and leadership principles.</li>
                                                 <li>Gained hands-on experience in seamanship and naval operations.</li>
-                                                <!-- ... Add more Midshipman details as needed -->
+                                                <li>Adopted and upheld military discipline and standards.</li>
+                                                <li>Grew personally and professionally to prepare for future naval roles.</li>
                                             </ul>
                                             <h5>Skills: Team Leadership · Management · Team Building</h5>
                                         </div>
@@ -411,9 +489,9 @@
     </div>
 
     <!-- Bootstrap JS and Popper.js -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js "></script>
 
     <script>
         // Toggle tab
